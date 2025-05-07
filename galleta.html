@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galletas </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="hy.js"></script>
+</head>
+<body>
+
+    <button class="cart-button" onclick="toggleCart()">
+        <img src="https://static.vecteezy.com/system/resources/previews/014/807/338/original/shopping-cart-line-icon-vector.jpg" alt="Carrito" class="cart-image">
+</button>
+
+    <!-- Ventana del carrito -->
+    <div class="cart" id="cart">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <div class="total" id="total">Total: $0.00</div>
+        <button onclick="checkout()">Comprar Todo</button>
+    </div>
+    <div>
+
+   
+
+
+    <header>
+    <nav class="cont">
+       <h1> Amor en postres</h1>
+       <ul>
+        <li><a href="mision.v.v.html">Conocenos</a> </li>
+        <li><a href="index.html"> inicio</a> </li>
+        <li><a href="todo tipo de chocolate.html">Mas variedades </a> </li>
+        <li><a href="contanto.html">contanto</a></li>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+        </div>
+       </ul>
+    </nav>
+     </header>
+</head>
+<body>
+    <center>
+        <img src="Amor_En_Postrelogo120-removebg-preview.png" width="150" alt="150">
+    <h1><span style="color:rgb(45, 197, 164)"> Gallete de colores y chismita</span></h1>
+
+   
+<div class="conta">
+<div class="espacio">
+    <img src="galletaaa.jpg" width="200"  class="imagen">
+    <h3 class="titulo">Galletas con una masa altesanar con chispita de chocolate</h3>
+    <p class="precio">Caja de galleta de 6 unidad $700 peso</p>
+    <button class="lott" onclick="addToCart('galletas chispita de color $750', 1000)">Añadir al carrito</button>
+     </div>
+
+<div class="espacio">
+    <img src="https://i.pinimg.com/736x/80/ef/20/80ef2056763c6c5e0b158587015da8e7.jpg" width="150"  class="imagen">
+    <h3 class="titulo">Galletas de chispita de color con un sabor super dulce</h3>
+    <p class="precio">Caja de 6 unidad por $350 peso, Caja de 12 unidad por $1000 peso, Caja de 24 unidad $2100 peso</p>
+    <button class="lott" onclick="addToCart('galleta con m y m',12,$1000)">Añadir al carrito</button>
+</div>
+
+    <div class="espacio">
+        <img src="galleta de chispita de colores.jpg" width="150"  class="imagen">
+        <h3 class="titulo">Galletas con una masa altesanar con chispita de chocolate y M y M  de chocolate</h3>
+        <p class="precio">10 galleta $1200</p>
+        <button class="lott" onclick="addToCart('galleta con chocolate', 1000)">Añadir al carrito</button>
+    </div>
+
+    <div class="conta">
+    <div class="espacio">
+        <img src="https://i.pinimg.com/736x/1b/5b/9d/1b5b9dd49508cc5df2ff3867a141cfed.jpg" width="150"  class="imagen">
+        <h3 class="titulo">Galletas con amor y muy deliciosas</h3>
+        <p class="precio"> 4 galletas $300, 6 galletas 500 </p>
+        <button class="lott" onclick="addToCart('Galleta con amor 6 por $500', 1000)">Añadir al carrito</button>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIZCOCHO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="hy.js" defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <button class="cart-button" onclick="toggleCart()">
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/014/807/338/original/shopping-cart-line-icon-vector.jpg"
+      alt="Carrito"
+      class="cart-image"
+    />
+  </button>
+
+  <!-- Ventana del carrito -->
+  <div class="cart" id="cart">
+    <h2>Tu Carrito</h2>
+    <ul id="cart-items"></ul>
+    <div class="total" id="total">Total: $0.00</div>
+    <button onclick="checkout()">Comprar Todo</button>
+  </div>
+
+  <header>
+    <nav class="cont">
+      <h1>Amor en postres</h1>
+      <ul>
+        <li><a href="mision.v.v.html">Conócenos</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="todo tipo de chocolate.html">Más variedades</a></li>
+        <li><a href="contanto.html">Contacto</a></li>
+        <div class="search-container">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+            </div>
+      </ul>
+    </nav>
+  </header>
+
+<center>
+  <img src="Amor_En_Postrelogo120-removebg-preview.png"  width="150" alt="150">
+  <h1><span style="color:rgb(45, 197, 164)">Bizcocho de chocolate</span></h1>
+
+
+<br> <br>
+<div class="conta">
+  <div class="espacio">
+    <img src="bizcocho.jpg" width="200" class="imagen">
+    <h3 class="titulo">bizcocho de chocolate con relleno de nutella</h3>
+    <p class="precio"> churros $1300 </p>
+    <button class="lott" onclick="addToCart('bizcocho relleno de nutella', 1300)">Añadir al carrito</button>
+</div>
+
+<div class="espacio">
+    <img src="bizcocho borcan.jpg" width="200" class="imagen">
+    <h3 class="titulo">bizcocho de chocolate con almendra</h3>
+    <p class="precio"> churros $1300 </p>
+    <button class="lott" onclick="addToCart('bizcocho chocolate con almendra', 1300)">Añadir al carrito</button>
+</div>
+
+
+<div class="espacio">
+    <img src="bizcocho con fresa.jpg" width="200" class="imagen">
+    <h3 class="titulo">bizcocho de chocolate con fresa</h3>
+    <p class="precio"> churros $1300 </p>
+    <button class="lott" onclick="addToCart('bizcocho chocolate con fresa', 1300)">Añadir al carrito</button>
+</div>
+
+<div class="espacio">
+  <img src="chocolate negro.jpg" width="200" class="imagen">
+  <h3 class="titulo">bizcocho de chocolate negro con chispita</h3>
+  <p class="precio"> churros $1300 </p>
+  <button class="lott" onclick="addToCart('bizcocho chocolate negro', 1300)">Añadir al carrito</button>
+</div>
+</div>

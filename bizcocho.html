@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIZCOCHO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="hy.js" defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <button class="cart-button" onclick="toggleCart()">
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/014/807/338/original/shopping-cart-line-icon-vector.jpg"
+      alt="Carrito"
+      class="cart-image"
+    />
+  </button>
+
+  <!-- Ventana del carrito -->
+  <div class="cart" id="cart">
+    <h2>Tu Carrito</h2>
+    <ul id="cart-items"></ul>
+    <div class="total" id="total">Total: $0.00</div>
+    <button onclick="checkout()">Comprar Todo</button>
+  </div>
+
+  <header>
+    <nav class="cont">
+      <h1>Amor en postres</h1>
+      <ul>
+        <li><a href="mision.v.v.html">Conócenos</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="todo tipo de chocolate.html">Más variedades</a></li>
+        <li><a href="contanto.html">Contacto</a></li>
+        <div class="search-container">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+            </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <center>
+      <img
+        src="Amor_En_Postrelogo120-removebg-preview.png"
+        width="150"
+        alt="Logo"
+      />
+      <h2 style="color: rgb(45, 197, 164)">
+        BIZCOCHO CON UN MEJOR SABOR
+      </h2>
+      <hr />
+    </center>
+
+    <div class="conta">
+      <div class="espacio card">
+        <img
+          src="bizcocho-de-calabaza-3-e1728878488435-696x464.webp"width="200"
+          class="imagen"
+        />
+        <h3 class="titulo">
+          Bizcocho de calabaza con glaseado de chocolate blanco y nueces
+        </h3>
+        <p class="precio">Bizcocho entero $1300</p>
+        <button
+          class="lott"
+          onclick="addToCart('bizcocho de calabaza', 1300)"
+        >
+          Añadir al carrito
+        </button>
+      </div>
+
+      <div class="espacio card">
+        <img
+          src="bizcocho de limon.jpg"
+          width="200"
+          class="imagen"
+        />
+        <h3 class="titulo">
+          Bizcocho de limón con glaseado artesanal de limón
+        </h3>
+        <p class="precio">Bizcocho entero $1300</p>
+        <button
+          class="lott"
+          onclick="addToCart('bizcocho de limón', 1300)"
+        >
+          Añadir al carrito
+        </button>
+      </div>
+
+      <div class="espacio card">
+        <img
+          src="zanaoria bizcocho.jpg"
+          width="200"
+          class="imagen"
+        />
+        <h3 class="titulo">
+          Bizcocho de zanahoria con masa artesanal y chocolate blanco
+        </h3>
+        <p class="precio">Bizcocho entero $2000</p>
+        <button
+          class="lott"
+          onclick="addToCart('bizcocho de zanahoria', 2000)"
+        >
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+
+</body>
+</html>

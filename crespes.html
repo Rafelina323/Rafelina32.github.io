@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crespes</title>
+    <title>Amor en postres</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="hy.js"></script>
+</head>
+<body>
+
+    <button class="cart-button" onclick="toggleCart()">
+        <img src="https://static.vecteezy.com/system/resources/previews/014/807/338/original/shopping-cart-line-icon-vector.jpg" alt="Carrito" class="cart-image">
+</button>
+
+    <!-- Ventana del carrito -->
+    <div class="cart" id="cart">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <div class="total" id="total">Total: $0.00</div>
+        <button onclick="checkout()">Comprar Todo</button>
+    </div>
+    <div>
+
+   
+
+    <header>
+    <nav class="cont">
+       <h1> Amor en postres</h1>
+       <ul>
+        <li><a href="mision.v.v.html">Conocenos</a> </li>
+        <li><a href="index.html"> inicio</a> </li>
+        <li><a href="todo tipo de chocolate.html">Mas variedades </a> </li>
+        <li><a href="contanto.html">contanto</a></li>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+        </div>
+       </ul>
+    </nav>
+     </header>
+</head>
+<body>
+    <center>
+    <img src="Amor_En_Postrelogo120-removebg-preview.png" width="200" alt="200">
+    <h2><span style="color:rgb(45, 197, 164)"> TODO TIPO DE CRESPES</span></h2>
+<hr>
+<div class="conta">
+    <div class="espacio">
+        <img src="crespes caseros.jpg" width="200" class="imagen">
+        <h3 class="titulo">crespes de chocolate y pirulines y trosito de brawin</h3>
+        <p class="precio">grande $800 </p>
+        <button class="lott" onclick="addToCart('crespes de chocolate y pirulines', 800)">Añadir al carrito</button>
+     </div>
+
+     
+        <div class="espacio">
+            <img src="crespes.jpg" width="200" class="imagen">
+            <h3 class="titulo">crespes Original con guineo maduro y claseado de chocolate</h3>
+            <p class="precio"> grande $700 </p>
+            <button class="lott" onclick="addToCart('crespes de guioneo y choclate', 700)">Añadir al carrito</button>
+         </div>
+
+         
+         <div class="espacio">
+             <img src="871dd143aca401db582a1f381fd29697.jpg" width="200" class="imagen">
+             <h3 class="titulo">Crespes en rollitos relleno de dulce de leche y claseado de chocolate</h3>
+             <p class="precio"> grande $900 </p>
+             <button class="lott" onclick="addToCart('crespes de dulce de leche y choclate', 900)">Añadir al carrito</button>
+          </div>
+ 
+          
+            <div class="espacio">
+                <img src="https://i.pinimg.com/736x/69/f6/6a/69f66a1db143f87267a7298b477f0081.jpg" width="200" class="imagen">
+                <h3 class="titulo">crespes de nutella y fresa<h3>
+                <p class="precio"> grande $850 </p>
+                <button class="lott" onclick="addToCart('cres de nutella y fresa', 850)">Añadir al carrito</button>
+             </div>
+
+
+    <center>
+</body>
+</html>

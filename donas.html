@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="hy.js"></script>
+    <!-- Font Awesome para el ícono de búsqueda -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <button class="cart-button" onclick="toggleCart()">
+        <img src="https://static.vecteezy.com/system/resources/previews/014/807/338/original/shopping-cart-line-icon-vector.jpg" alt="Carrito" class="cart-image">
+    </button>
+
+    <!-- Ventana del carrito -->
+    <div class="cart" id="cart">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <div class="total" id="total">Total: $0.00</div>
+        <button onclick="checkout()">Comprar Todo</button>
+    </div>
+
+    <header>
+        <nav class="cont">
+            <h1>Amor en postres</h1>
+            <ul>
+                <li><a href="mision.v.v.html">Conócenos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="todo tipo de chocolate.html">Más variedades</a></li>
+                <li><a href="contanto.html">Contacto</a></li>
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <center>
+        <img src="Amor_En_Postrelogo120-removebg-preview.png" width="150" alt="Logo">
+        <h1><span style="color:rgb(45, 197, 164)">Todo tipo de Donas</span></h1>
+    </center>
+
+    <div class="conta">
+
+        <!-- Producto 1 -->
+        <div class="espacio card">
+            <img src="Receta-de-Donas.webp" width="200" class="imagen">
+            <h3 class="titulo">Donas a tu gusto con diferentes glaseado</h3>
+            <p class="precio">Unidad de 6 por $750, 12 por $1300, 34 por $2300</p>
+            <button class="lott" onclick="addToCart('donas clasicas', 1000)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="espacio card">
+            <img src="navidad donas.jpg" width="200" class="imagen">
+            <h3 class="titulo">Donas decoradas para un día especial</h3>
+            <p class="precio">6 por $800, 12 por $1100, 24 por $2200</p>
+            <button class="lott" onclick="addToCart('Producto 2', 20)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="espacio card">
+            <img src="minis donas.jpg" width="200" class="imagen">
+            <h3 class="titulo">Minis donas con chocolate, nutella y más</h3>
+            <p class="precio">6 por $1000, 12 por $1300, 24 por $2100</p>
+            <button class="lott" onclick="addToCart('Producto 3', 20)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="espacio card">
+            <img src="https://i.pinimg.com/736x/9c/40/31/9c4031e407d38298eeb3733b21a241f4.jpg" width="200" class="imagen">
+            <h3 class="titulo">Deliciosas donas con glaseado a elección</h3>
+            <p class="precio">Precio $1200</p>
+            <button class="lott" onclick="addToCart('Producto 4', 20)">Añadir al carrito</button>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("search-input").addEventListener("input", function () {
+            let query = this.value.toLowerCase();
+            let cards = document.querySelectorAll(".card");
+
+            cards.forEach(function (card) {
+                let title = card.querySelector("h3").textContent.toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

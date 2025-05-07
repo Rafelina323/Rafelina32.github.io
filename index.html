@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor en postres</title>
+    <link rel="stylesheet" href="pruba.css">
+    <script src="prueba.js"></script>
+</head>
+<body>
+
+    
+
+    <header>
+    <nav class="cont">
+       <h1> Amor en postres</h1>
+       <ul>
+        <li><a href="mision.v.v.html"> Conocenos</a> </li>
+        <li><a href="index.html"> inicio</a> </li>
+        <li><a href="todo tipo de chocolate.html">Mas variedades </a> </li>
+        <li><a href="contanto.html">contanto</a> </li>
+        <center>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+            <i class="search-icon fas fa-search"></i>
+            </center>
+        </div>
+    </ul>
+
+
+       </ul>
+    </nav>
+     </header>
+
+     <center>
+        <img src="Amor_En_Postrelogo120-removebg-preview.png" width="150" alt="150">
+
+        <h1><span style="color:rgb(45, 197, 164)">AMOR EN POSTRE</span></h1>
+    
+
+        <div class="carousel"> 
+            <div class="carousel-images">
+            <img src="para la pagina1.png" alt=srty>
+            <img src="pagina2.png" alt=srty>
+            </div>
+            <button class="carousel-button prev" onclick="moverSlide(-1)"> &#10094;</button>
+            <button class="carousel-button next" onclick="moverSlide(1)"> &#10095;</button>
+            </div>
+        <header>
+    
+    
+   
+    <div style="text-align: left;">
+    <section style="margin: 20px; text-align: right; width: 80%;"></section>
+    </center>
+    
+
+    <footer class="footer">
+      <div class="footer-container">
+          <!-- Información de contacto -->
+          <div class="footer-section">
+              <h3>Contacto</h3>
+              <p><i class="fas fa-envelope"></i> Email: <a href="Amorenpostre@gmail.com">contacto@postres.com</a></p>
+              <p><i class="fas fa-phone"></i> Teléfono: +809 298 2429</p>
+              <p><i class="fas fa-map-marker-alt"></i> Ubicación: Licey, Las Palomas</p>
+          </div>
+  
+          <!-- Sección de redes sociales -->
+          <div class="footer-section social-media">
+              <h3>Síguenos</h3>
+              <a href="https://www.facebook.com/profile.php?id=100077939321976" target="_blank">
+                  <i class="fab fa-facebook"></i> Facebook
+              </a>
+              <a href="https://www.instagram.com/matos_rafe09/?__pwa=" target="_blank">
+                  <i class="fab fa-instagram"></i> Instagram
+              </a>
+          </div>
+  
+          <!-- Sección rápida de enlaces -->
+          <div class="footer-section">
+              <h3>Enlaces Rápidos</h3>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="mision.v.v.html">Conocenos</a></li>
+                  <li><a href="todo tipo de chocolate.html">Mas variedades</a></li>
+                  <li><a href="contanto.html">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+  
+      <!-- Derechos de autor -->
+      <div class="footer-bottom">
+          <p>&copy; 2025 Amor en Postres | Todos los derechos reservados.</p>
+      </div>
+  </footer>
+  
+  
+  
+
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>// Obtener el campo de búsqueda
+    document.getElementById("search-input").addEventListener("input", function() {
+        // Obtener el valor que el usuario escribió en el campo de búsqueda
+        let query = this.value.toLowerCase();
+    
+        // Seleccionar todas las tarjetas
+        let cards = document.querySelectorAll(".card");
+    
+        // Iterar sobre cada tarjeta
+        cards.forEach(function(card) {
+            let title = card.querySelector("h3").textContent.toLowerCase(); // Obtener el título de la tarjeta
+    
+            // Comprobar si el título de la tarjeta contiene el texto buscado
+            if (title.includes(query)) {
+                card.style.display = "block"; // Mostrar la tarjeta
+            } else {
+                card.style.display = "none"; // Ocultar la tarjeta
+            }
+        });
+    });
+    </script>
